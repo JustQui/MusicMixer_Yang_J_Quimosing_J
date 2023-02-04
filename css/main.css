@@ -1,0 +1,43 @@
+/* We typically use one CSS file, named main.css to control all of our pages */
+
+/* this is a class we use to hide headings in our design */
+.hidden {
+    display: none;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+    background: #fff;
+    /* horz offset, vert offset, blur value color*/
+    box-shadow: 0px 5px 8px #888;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 78px);
+    grid-column-gap: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+/* Header */
+#main-header {
+
+}
+
+/* Contents */
+
+#modelCon {
+
+}
+
+#closetCon {
+
+}
+
+.clothingpiece {
+    
+}
+
+/* Footer */
