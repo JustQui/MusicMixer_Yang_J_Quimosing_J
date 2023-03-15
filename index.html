@@ -11,33 +11,42 @@
     <h1 class="hidden">Music Mixer</h1>
 
     <div id="container">
-        <header id="main-header" class="grid">
-            <h2>Music Model Mix Up!</h2>
+        <header id="main-header">
+            <h1>Music Model Mix Up!</h1>
+            <p>Dress-up Music Maker</p>
         </header>
     
         <section>
-            <h2>Dress-up Music Maker</h2>
+            <h2 class="hidden">Game Board</h2>
+                <div id="modelCon">
+                    <img src="images/Doll.svg" alt="model">
+                </div>
 
-            <div id="modelCon" class="grid">
-                <div></div>
-            </div>
+                <div id="closetCon">
+                    <div class="clothing-piece hat hat1"><img src="images/hiphop-hat.svg" alt="hat1"></div>
+                    <div class="clothing-piece hat hat2"><img src="images/rock-hat.svg" alt="hat2"></div>
+                    <div class="clothing-piece hat hat3"><img src="images/indie-hat.svg" alt="hat3"></div>
+                    <div class="clothing-piece t-shirt t-shirt1"><img src="images/hiphop-shirt.svg" alt="t-shirt1"></div>
+                    <div class="clothing-piece t-shirt t-shirt2"><img src="images/rock-shirt.svg" alt="t-shirt2" id="rock-shirt"></div>
+                    <div class="clothing-piece t-shirt t-shirt3"><img src="images/indie-shirt.svg" alt="t-shirt3"></div>
+                    <div class="clothing-piece pant pant1"><img src="images/hiphop-pants.svg" alt="pants1"></div>
+                    <div class="clothing-piece pant pant2"><img src="images/rock-pants.svg" alt="pants2"></div>
+                    <div class="clothing-piece pant pant3"><img src="images/indie-pants.svg" alt="pants3"></div>
+                </div>
 
-            <div id="closetCon" class="grid">
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-                <div class="clothing-piece"></div>
-            </div>
+                <div id="dropCon">
+                    <div class="drop-zone hat"></div>
+                    <div class="drop-zone t-shirt"></div>
+                    <div class="drop-zone pant"></div>
+                </div>
+
         </section>
-    </div>
-</body>
 
-<footer>
-    <h2>footer content</h2>
-</footer>
+        <footer>
+            <h2 class="hidden">footer content</h2>
+        </footer>
+    </div>
+
+	<script src="js/main.js"></script>
+</body>
+</html>
