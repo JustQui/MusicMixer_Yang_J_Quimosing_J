@@ -8,6 +8,15 @@
     background-color: rgb(255, 198, 223);
 }
 
+body {
+    background-color: rgb(255, 238, 245);
+}
+
+.stack-top{
+    z-index: 9;
+    margin: 20px; /* for demo purpose  */
+}
+
 /* Header */
 
 #main-header h1 {
@@ -30,26 +39,25 @@
 /* Contents */
 
 #modelCon {
+    width: 300px;
+    margin: 70px 70px 70px 300px;
     position: absolute;
-    width: 35%;
-    height: 1800px;
-    margin-left: 200px;
-    /* background-image: url('../images/Woman_Silhouette.png');
-	background-repeat: no-repeat; */
 }
 
-#modelCon img{
-    width: 90%;
-    height: 1600px;
-    margin-left: 150px;
+#dropCon {
+    width: 350px;
+    height: 735px;
+	border: thin dashed #747474;
+    position: relative;
+    margin: 70px 70px 70px 280px;
 }
 
 
 #closetCon {
     width: 40%; 
     position: absolute;
-    right: 600px;
-    top:500px;
+    right: 240px;
+    top: 255px;
     
     display: flex; 
     flex-wrap: wrap; 
@@ -68,15 +76,7 @@
     width: 90%;
 }
 
-#dropCon {
-    position: relative;
-    top:-100px;
-    left:600px;
-	width: 1000px;
-    height: 1800px;
 
-	border: thin dashed #747474;
-}
 
 .drop-zone img {
     width: 100%;
@@ -95,11 +95,10 @@ height: 455px;
 }
 
 .drop-zone:first-child{
-  left: 362px;
-  width: 287px;
-  height: 243px;
-  top:66px;
-
+    left: 102px;
+    width: 125px;
+    height: 114px;
+    top: 64px;
    /* left:320px;
    width: 300px;
    height: 200px;
@@ -108,11 +107,11 @@ height: 455px;
 
 .drop-zone:nth-child(2){
 
-top: 383px;
-left: 158px;
-width: 625px;
-height: 455px;
-z-index: 555;
+    top: 178px;
+    left: 1px;
+    width: 349px;
+    height: 205px;
+    z-index: 555;
    /* top:300px;
    left:300px;
 
@@ -124,10 +123,10 @@ z-index: 555;
 
 .drop-zone:last-child{
 
-  top: 744px;
-  left: 239px;
-  width: 635px;
-  height: 1011px;
+    top: 341px;
+    left: 0px;
+    width: 350px;
+    height: 395px;
    /* top:700px;
    left:210px;
 
