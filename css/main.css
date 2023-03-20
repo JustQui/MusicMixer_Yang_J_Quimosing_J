@@ -9,8 +9,12 @@
 }
 
 body {
-    background-color: rgb(255, 238, 245);
+    background-image: url("../images/bg.png");
 }
+
+h1 {font-family: 'Nunito', sans-serif;}
+h2 {font-family: 'Nunito', sans-serif;}
+p{font-family: 'Nunito', sans-serif;}
 
 .stack-top{
     z-index: 9;
@@ -20,19 +24,18 @@ body {
 /* Header */
 
 #main-header h1 {
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 800px;
-    margin-bottom: -30px;
-    margin-top: -30px;
     padding-left: 50px;
     text-align: center;
+    color:aliceblue
 }
 
 #main-header p{
-   font-size: 50px;
+   font-size: 30px;
    font-weight: 600px; 
-   padding-left: 100px;
    text-align: center;
+   color: bisque;
 }
 
 
@@ -47,7 +50,7 @@ body {
 #dropCon {
     width: 350px;
     height: 735px;
-	border: thin dashed #747474;
+	/*border: thin dashed #747474;*/
     position: relative;
     margin: 70px 70px 70px 280px;
 }
@@ -67,7 +70,7 @@ body {
 
 .clothing-piece {
     width: 25%;
-    border: thin solid black; 
+    /*border: thin solid black;*/ 
     margin-bottom: 10px;
     margin-right: 10px;
 }
@@ -90,12 +93,11 @@ height: 455px;
 }
 .drop-zone{
    position:absolute;
-   border: 1px dashed rgb(255, 55, 0);
-   
+   /*border: 1px dashed rgb(255, 55, 0);*/
 }
 
 .drop-zone:first-child{
-    left: 102px;
+    left: 113px;
     width: 125px;
     height: 114px;
     top: 64px;
@@ -107,9 +109,9 @@ height: 455px;
 
 .drop-zone:nth-child(2){
 
-    top: 178px;
-    left: 1px;
-    width: 349px;
+    top: 176px;
+    left: 34px;
+    width: 255px;
     height: 205px;
     z-index: 555;
    /* top:300px;
@@ -123,10 +125,10 @@ height: 455px;
 
 .drop-zone:last-child{
 
-    top: 341px;
-    left: 0px;
-    width: 350px;
-    height: 395px;
+    top: 336px;
+    left: 66px;
+    width: 258px;
+    height: 412px;
    /* top:700px;
    left:210px;
 
