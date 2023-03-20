@@ -13,6 +13,7 @@
 
 <body>
     <h1 class="hidden">Music Mixer</h1>
+    <audio src="audio/chill-beats.mp3" loop></audio>
 
     <div id="container">
         <header id="main-header">
@@ -27,15 +28,15 @@
                 </div>
 
                 <div id="closetCon" class="l-col-start-5 l-col-end-12">
-                    <div class="clothing-piece hat hat1"><img src="images/hiphop-hat.svg" alt="hat1"></div>
-                    <div class="clothing-piece hat hat2"><img src="images/rock-hat.svg" alt="hat2"></div>
-                    <div class="clothing-piece hat hat3"><img src="images/indie-hat.svg" alt="hat3"></div>
-                    <div class="clothing-piece t-shirt t-shirt1"><img src="images/hiphop-shirt.svg" alt="t-shirt1"></div>
-                    <div class="clothing-piece t-shirt t-shirt2"><img src="images/rock-shirt.svg" alt="t-shirt2" id="rock-shirt"></div>
-                    <div class="clothing-piece t-shirt t-shirt3"><img src="images/indie-shirt.svg" alt="t-shirt3"></div>
-                    <div class="clothing-piece pant pant1"><img src="images/hiphop-pants.svg" alt="pants1"></div>
-                    <div class="clothing-piece pant pant2"><img src="images/rock-pants.svg" alt="pants2"></div>
-                    <div class="clothing-piece pant pant3"><img src="images/indie-pants.svg" alt="pants3"></div>
+                    <div class="clothing-piece hat hat1"><img data-trackref="hiphop-bass" src="images/hiphop-hat.svg" alt="hat1"></div>
+                    <div class="clothing-piece hat hat2"><img data-trackref="rock-beats" src="images/rock-hat.svg" alt="hat2"></div>
+                    <div class="clothing-piece hat hat3"><img data-trackref="chill-beats" src="images/indie-hat.svg" alt="hat3"></div>
+                    <div class="clothing-piece t-shirt t-shirt1"><img data-trackref="hiphop-sax" src="images/hiphop-shirt.svg" alt="t-shirt1"></div>
+                    <div class="clothing-piece t-shirt t-shirt2"><img data-trackref="rock-guitar" src="images/rock-shirt.svg" alt="t-shirt2" id="rock-shirt"></div>
+                    <div class="clothing-piece t-shirt t-shirt3"><img data-trackref="chill-guitar" src="images/indie-shirt.svg" alt="t-shirt3"></div>
+                    <div class="clothing-piece pant pant1"><img data-trackref="hiphop-bass" src="images/hiphop-pants.svg" alt="pants1"></div>
+                    <div class="clothing-piece pant pant2"><img data-trackref="rock-synth" src="images/rock-pants.svg" alt="pants2"></div>
+                    <div class="clothing-piece pant pant3"><img data-trackref="chill-piano" src="images/indie-pants.svg" alt="pants3"></div>
                 </div>
 
                 <div id="dropCon" class="stack-top l-col-start-1 l-col-end-4">
@@ -45,6 +46,13 @@
                 </div>
 
         </section>
+
+        <section class="audio-controls">
+            <button id="playButton">PLAY</button>
+            <button id="pauseButton">PAUSE</button>
+            <button id="rewindButton">REWIND</button>
+      
+            <input id="volumeControl" type="range" min="0" max="100" step="1"></input>
 
         <footer>
             <h2 class="hidden">footer content</h2>

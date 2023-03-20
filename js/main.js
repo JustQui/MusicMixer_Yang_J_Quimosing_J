@@ -8,7 +8,16 @@ let
 	// because we need it in the handleDrop function
 	draggedPiece;
 
+//audio ref
 
+const	theAudioEl = document.querySelector('audio'),
+		playButton = document.querySelector('#playButton'),
+		pauseButton = document.querySelector('#pauseButton'),
+		rewindButton = document.querySelector('#rewindButton'),
+		volSlider = document.querySelector ('#volumeControl');
+
+
+// === functions ===
 function handleStartDrag() { 
 	console.log('started dragging this piece:', this);
 
@@ -51,21 +60,43 @@ function handleDrop(e) {
 	else {
 			this.appendChild(draggedPiece);
 	}	
-	
-		
 
+// audio functions
 
-
-	
-
-
-	
-
-	
+function loadAudio() {
+    let currentSrc = `audio/${this.dataset.trackref}.mp3`;
+    theAudioEl.src = currentSrc
+    theAudioEl.load();
+    playAudio();
 }
 
-	
+function restartAudio() {
+    theAudioEl.currentTime = 0;
+}
+function pauseAudio() {
+    theAudioEl.pause();
+}
+function playAudio() {
+    theAudioEl.play();
+}
 
+function setVolume() {
+    console.log(this.value);
+    theAudioEl.volume = this.value/100;
+}
+
+// === event listeners ===
+
+closetPieces.forEach(cover => cover.addEventListener('drag', loadAudio));
+
+// add event handling for the custom controls
+playButton.addEventListener('click', playAudio);
+pauseButton.addEventListener('click', pauseAudio);
+rewindButton.addEventListener('click', restartAudio);
+
+volSlider.addEventListener('change', setVolume);
+	
+}
 
 // add the drag event handling to the puzzle pieces
 closetPieces.forEach(piece => piece.addEventListener("dragstart", handleStartDrag));
