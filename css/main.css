@@ -148,13 +148,14 @@ height: 455px;
 /* button */
 
 .audio-controls button {
- width: 200px;
- height: 100px;
+ width: 150px;
+ height: 80px;
  background-color: rgb(195, 131, 254);
  border: 1px solid rgb(145, 34, 145);
  border-radius: 50px;
  color: #fff;
  font-size: 20px;
+ margin-left:20px;
 }
 
 .audio-controls button:hover {
