@@ -14,6 +14,8 @@ const	theAudioEl = document.querySelector('audio'),
 		playButton = document.querySelector('#playButton'),
 		pauseButton = document.querySelector('#pauseButton'),
 		rewindButton = document.querySelector('#rewindButton'),
+      		resetButton = document.querySelector('#resetButton'),
+
 		volSlider = document.querySelector ('#volumeControl');
 
 
@@ -76,8 +78,13 @@ function restartAudio() {
 function pauseAudio() {
     theAudioEl.pause();
 }
+	
 function playAudio() {
     theAudioEl.play();
+}
+	
+function resetDrop() {
+	window.location.reload();
 }
 
 function setVolume() {
@@ -93,6 +100,8 @@ closetPieces.forEach(cover => cover.addEventListener('drag', loadAudio));
 playButton.addEventListener('click', playAudio);
 pauseButton.addEventListener('click', pauseAudio);
 rewindButton.addEventListener('click', restartAudio);
+resetButton.addEventListener('click', resetDrop);
+
 
 volSlider.addEventListener('change', setVolume);
 	
