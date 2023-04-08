@@ -1,6 +1,4 @@
-let
-	// theHeading = document.querySelector("#main-header h1"),
-	closet = document.querySelector("#closetCon"),
+let closet = document.querySelector("#closetCon"),
 	closetPieces = document.querySelectorAll(".clothing-piece img"),
 	dropBoard = document.querySelector("#dropCon"),
 	dropZones = document.querySelectorAll(".drop-zone"),
