@@ -9,7 +9,11 @@
 }
 
 body {
-    background-image: url("../images/bg.png");
+    background-image: url("../images/concert_bg.jpg");
+    background-size: cover;
+    background-color: rgb(164, 62, 105);
+    background-blend-mode: soft-light;
+    background-repeat: no-repeat;
 }
 
 h1 {font-family: 'Nunito', sans-serif;}
@@ -23,17 +27,20 @@ p{font-family: 'Nunito', sans-serif;}
 
 /* Header */
 
+#main-header {
+    background-color: rgb(194, 35, 128);
+    padding: 20px;
+}
+
 #main-header h1 {
     font-size: 75px;
-    font-weight: 800px;
     padding-left: 50px;
     text-align: center;
-    color:aliceblue
+    color:aliceblue;
 }
 
 #main-header p{
    font-size: 30px;
-   font-weight: 600px; 
    text-align: center;
    color: bisque;
 }
@@ -61,10 +68,17 @@ p{font-family: 'Nunito', sans-serif;}
     position: absolute;
     right: 240px;
     top: 255px;
+    border-radius: 10%;
     
     display: flex; 
     flex-wrap: wrap; 
     justify-content: space-around;
+
+    background-image: url("../images/closet.jpg");
+    background-color: rgb(96, 27, 49);
+    background-blend-mode: multiply;
+    background-size: contain;
+    padding: 30px;
    
 }
 
@@ -143,7 +157,15 @@ height: 455px;
  */
 
 /* Footer */
+#footer-con {
+    background-color: rgb(72, 38, 57);
+    color: aliceblue;
+    padding: 10px;
+}
 
+#footer-con p {
+    text-align: center;
+}
 
 /* button */
 
@@ -156,6 +178,8 @@ height: 455px;
  color: #fff;
  font-size: 20px;
  margin-left:20px;
+
+ font-family: 'Nunito', sans-serif;
 }
 
 .audio-controls button:hover {
